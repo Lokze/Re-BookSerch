@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    background-color: #c09642;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+
+        background-color: #ece0d1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    h1 {
+        font-family: 'EB Garamond', serif;
+        margin: 0%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        text-align: center;
+        margin: 5%;
+    }
+
+
+    #input {
+        margin: 5%;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #genere {
+        margin: 1%;
+        padding: 3%;
+        margin-top: 10px;
+        font-family: 'EB Garamond', serif;
+        font-size: large;
+        border: none;
+        background-color: #ece0d1;
+        border-radius: 10px;
+    }
+
+    #submit {
+        margin: 1%;
+        padding: 3%;
+        font-family: 'EB Garamond', serif;
+        font-size: large;
+        border: none;
+        background-color: #ece0d1;
+        border-radius: 10px;
+    }
+
+    #submit:hover {
+        border-style: solid;
+        border-color: #5e4a23;
+    }
+
+    #genere:hover {
+        border-style: solid;
+        border-color: #5e4a23;
+    }
+
+
+    #output {
+        font-family: 'Gupter', serif;
+        margin: 5;
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .author{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .books{
+        width: 300px;
+        background-color: #78602e; 
+        border-radius: 5px;
+        border: black solid 1px;
+        word-wrap: break-word;
+    }
+
+
+    a {
+        font-family: 'EB Garamond', serif;
+        font-size: large;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    .description {
+        background-color: #886724;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #container{
+        margin: 100px;
+    }
+}
+
+@media only screen  and (max-width: 2000px) and (min-width: 769px) {
+
+    header {
+
+        background-color: #ece0d1;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    h1 {
+        font-family: 'EB Garamond', serif;
+        margin: 0%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        text-align: center;
+        margin: 5%;
+    }
+
+
+    #input {
+        margin: 5%;
+        margin-left: 34%;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #genere {
+        margin: 1%;
+        padding: 3%;
+        font-family: 'EB Garamond', serif;
+        font-size: large;
+        border: none;
+        background-color: #ece0d1;
+        border-radius: 10px;
+    }
+
+    #submit {
+        margin: 1%;
+        padding: 3%;
+        font-family: 'EB Garamond', serif;
+        font-size: large;
+        border: none;
+        background-color: #ece0d1;
+        border-radius: 10px;
+    }
+
+    #submit:hover {
+        border-style: solid;
+        border-color: #5e4a23;
+    }
+
+    #genere:hover {
+        border-style: solid;
+        border-color: #5e4a23;
+    }
+
+
+    #output {
+        font-family: 'Gupter', serif;
+        margin: 5;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .author{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .books{
+        width: 300px;
+        background-color: #78602e; 
+        margin-bottom:0;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+
+    a {
+        font-family: 'EB Garamond', serif;
+        font-size: large;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    .description {
+        background-color: #886724;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    #container{
+        margin: 100px;
+    }
+
+}
