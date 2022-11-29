@@ -3,7 +3,7 @@ import lodash from 'lodash';
 
 let submit = document.getElementById("form");
 
-submit.onsubmit= async function bookSerch() {
+submit.onclick= async function bookSerch() {
     document.getElementById("output").innerHTML="";
     
     
