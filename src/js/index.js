@@ -36,7 +36,6 @@ submit.onclick= async function bookSerch() {
         else
         document.getElementById("output").innerHTML+="<p id='"+i+"' class='description' hidden>"+lodash.get(dataKey, ['description','value'])+"</p></div>";
         
-        console.log (dataKey);
     }
 
     
