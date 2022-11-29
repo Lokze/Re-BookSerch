@@ -1,5 +1,6 @@
 import axios from "axios";
 import lodash from 'lodash';
+import '../css/books.css';
 
 let submit = document.getElementById("form");
 
