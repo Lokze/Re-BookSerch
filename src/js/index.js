@@ -2,17 +2,20 @@ import axios from "axios";
 import lodash from 'lodash';
 import '../css/books.css';
 
-let submit = document.getElementById("form");
+let submit = document.getElementById("submit");
 
 submit.onclick= async function bookSerch() {
     document.getElementById("output").innerHTML="";
     
+    document.getElementById("output").innerHTML+="<div id='loader'></div>";
     
     const response= await axios.get ("https://openlibrary.org/subjects/"+document.getElementById("genere").value+".json?details=true");
     if(response.status!= 200){
         throw new Error('Request faild with status ${'+response.status+'}');
     }
     var data = response.data;
+
+    document.getElementById("output").removeChild(document.getElementById('loader'));
     
     for(var i=0; i<data.works.length; i++){
         const responseKey = await axios.get("https://openlibrary.org"+data.works[i].key+".json");
@@ -35,5 +38,7 @@ submit.onclick= async function bookSerch() {
         
         console.log (dataKey);
     }
+
+    
 }
 
